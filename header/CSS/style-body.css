@@ -31,6 +31,8 @@ body {
     height: 130px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
+    flex-direction: column;
+    align-items: center;
     }
 
 .card div {
