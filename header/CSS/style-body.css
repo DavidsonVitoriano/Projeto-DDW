@@ -3,26 +3,142 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
+
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 16px;
-    background-image: url();
     background-color: #96958a;
-    color: black;
 }
 
+/*HEADER*/
+h1 {
+    font-family: 'Gotham', sans-serif;
+}
+
+header {
+    background-color: #a10220;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-navbar ul li {
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+li a {
+    padding: 10px;
+}
+
+.guia-atual-header-navbar-li {
+    color: white;
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+.header-navbar-li:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-navbar-entrar:hover {
+    border-radius: 10px;
+    border: 1.5px solid white;
+    background-color: #a10220;
+    color: white;
+    text-decoration: none;
+}
+
+.header-navbar-entrar {
+    border: 1px solid white;
+    color: black;
+    background-color: #F8F9FA;
+    border-radius: 10px;
+}
+
+.header-fim ul li {
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header-navbar-li:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*CARD DOS PRODUTOS*/
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.menu-produtos {
+    background-color: #a10220;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+}
+
+.main-produtos {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    top: 50px;
+    right: 0px;
+    right: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
 .card {
-    background-color: aliceblue;
-    width: 186px;
-    height: 260px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
+
+
 }
 
 .img-padrao {
@@ -33,7 +149,7 @@ body {
     box-shadow: 4px 4px 12px #aaaa;
     flex-direction: column;
     align-items: center;
-    }
+}
 
 .card div {
     display: flex;
@@ -63,4 +179,16 @@ body {
     font-size: 1rem;
     font-weight: bold;
 
+}
+
+.footer{
+    background-color: #a10220;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
